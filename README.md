@@ -1,3 +1,5 @@
+Serverless back end para comunicação com Ibm Watson.
+
 #instalar as dependencias
 
  npm install
