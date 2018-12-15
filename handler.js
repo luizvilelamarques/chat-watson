@@ -22,12 +22,18 @@ module.exports.conversation = (event, context, callback) => {
       if (err) {
 	    callback(null, {
            statusCode: 501,
-           headers: { 'Content-Type': 'text/plain' },
+           headers: {
+			 'Access-Control-Allow-Origin': '*',
+		   },
            body: JSON.stringify(err),
         });
       } else {
         const response = {
 	      statusCode: 200,
+		  headers: {
+			'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Credentials': true,
+		  },
 	      body: JSON.stringify(res)
 	    };
 	    callback(null, response);
@@ -36,7 +42,7 @@ module.exports.conversation = (event, context, callback) => {
   } catch (e) {
     callback(null, {
       statusCode: 400,
-      headers: { 'Content-Type': 'text/plain' },
+      headers: { 'Access-Control-Allow-Origin': '*' },
       body: 'Couldn\'t parse json body',
     });
   }	
