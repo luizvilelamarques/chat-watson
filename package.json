@@ -1,0 +1,21 @@
+{
+  "name": "chatwatson",
+  "version": "0.1.0",
+  "description": "iag saude watson back end",
+  "main": "index.html",
+  "devDependencies": {
+    "aws-sdk-mock": "^2.0.0",
+    "cross-env": "^5.1.5",
+    "serverless-offline": "^3.31.3",
+    "serverless-webpack": "^5.1.0",
+    "webpack": "^4.2.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.238.1",
+    "watson-developer-cloud": "^3.15.0",
+    "serverless-openwhisk": ">=0.13.0",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}
