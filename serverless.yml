@@ -24,9 +24,9 @@ provider:
   name: aws
   runtime: nodejs6.10
   environment:
-      ASSISTANT_USERNAME: 1a638996-a801-413b-9713-ea0377924032
-      ASSISTANT_PASSWORD: Ull4DdI2fbtV
-      WORKSPACE_ID: 7afa5f9d-f41f-4518-b588-9f67c192c76c
+      ASSISTANT_USERNAME: xxx
+      ASSISTANT_PASSWORD: xxxx
+      WORKSPACE_ID: xxx
 
 # you can overwrite defaults here
 #  stage: dev
